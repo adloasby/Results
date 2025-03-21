@@ -6,20 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Report</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .container { display: flex; flex-wrap: wrap; }
-        .entry { width: 45%; margin: 20px; padding: 10px; border: 1px solid #ddd; }
-        .entry img { max-width: 100%; height: auto; }
-        .table-container { margin-top: 10px; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #4CAF50; color: white; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 10px; 
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 10px;
+        }
+        .entry { 
+            width: 100%; 
+            max-width: 500px;
+            margin: 10px auto; 
+            padding: 15px; 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .entry h2 { 
+            font-size: 18px; 
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .entry img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 5px;
+        }
+        .table-container { 
+            margin-top: 10px; 
+            overflow-x: auto;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: white; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: left; 
+            font-size: 14px;
+        }
+        th { 
+            background-color: #4CAF50; 
+            color: white; 
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .entry { 
+                width: 95%; 
+                margin: 10px auto; 
+            }
+            th, td { 
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Scientific Report</h1>
     <div class="container">
-
         <div class="entry">
             <h2>Target Relocation Result - D1_1 - Limitation</h2>
             <img src="D1_1.jpg" alt="Image">
